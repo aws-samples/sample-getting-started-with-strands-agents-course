@@ -1,0 +1,8 @@
+strands-agents
+strands-agents-tools
+python-dotenv
+strands-agents-tools[mem0_memory]
+strands-agents[anthropic]
+strands-agents[ollama]
+strands-agents[openai]
+mcp
