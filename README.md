@@ -40,12 +40,12 @@ Learn the complete journey of AI agent development, from basic usage to advanced
 
 | 🧪 Lab | 📝 What You'll Learn | ⏱️ Time | 📊 Level |
 |--------|---------------------|---------|----------|
-| [Lab 1: Strands Agent Basics](Lab1/) | Agent initialization, system prompts, HTTP tools | 15 min | ![Beginner](https://img.shields.io/badge/-Beginner-brightgreen) |
-| [Lab 2: Model Providers](Lab2/) | Anthropic & Amazon Bedrock integration | 18 min | ![Beginner](https://img.shields.io/badge/-Beginner-brightgreen) |
-| [Lab 3: AWS Service Integration](Lab3/) | AWS service tool usage (S3, DynamoDB) | 15 min | ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow) |
-| [Lab 4: MCP & Tools](Lab4/) | Model Context Protocol, tool creation | 14 min | ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow) |
-| [Lab 5: A2A Communication](Lab5/) | Multi-agent systems & communication | 11 min | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
-| [Lab 6: Observability](Lab6/) | LangFuse, RAGAS, performance monitoring | 21 min | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
+| [Lab 1: Strands Agent Basics](course-1/Lab1/) | Agent initialization, system prompts, HTTP tools | 15 min | ![Beginner](https://img.shields.io/badge/-Beginner-brightgreen) |
+| [Lab 2: Model Providers](course-1/Lab2/) | Anthropic & Amazon Bedrock integration | 18 min | ![Beginner](https://img.shields.io/badge/-Beginner-brightgreen) |
+| [Lab 3: AWS Service Integration](course-1/Lab3/) | AWS service tool usage (S3, DynamoDB) | 15 min | ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow) |
+| [Lab 4: MCP & Tools](course-1/Lab4/) | Model Context Protocol, tool creation | 14 min | ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow) |
+| [Lab 5: A2A Communication](course-1/Lab5/) | Multi-agent systems & communication | 11 min | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
+| [Lab 6: Observability](course-1/Lab6/) | LangFuse, RAGAS, performance monitoring | 21 min | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
 
 ### Course 1 Lab Details
 
