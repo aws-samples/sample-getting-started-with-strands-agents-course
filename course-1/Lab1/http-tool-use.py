@@ -11,7 +11,7 @@ from strands_tools import http_request
 #   - system_prompt: Defines the agent's role, expertise, and response guidelines
 #   - tools: List of tools the agent can use (http_request in this case)
 dog_breed_helper = Agent(
-    model="anthropic.claude-3-5-sonnet-20240620-v1:0",  # Specifies the Claude 3.5 Sonnet model
+    model="us.anthropic.claude-3-5-sonnet-20241022-v2:0",  # Specifies the Claude 3.5 Sonnet model
     system_prompt="""You are a dog breed expert specializing
     in helping new pet parents decide what breed meets their lifestyles. Your expertise
     covers dog behavior, dog training, basic veterinary care, and dog breed standards.

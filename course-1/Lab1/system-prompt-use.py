@@ -6,7 +6,7 @@ from strands import Agent
 #   - model: Specifies which LLM to use (Claude 3.5 Sonnet in this case)
 #   - system_prompt: Defines the agent's role, expertise, and response guidelines
 dog_breed_helper = Agent(
-    model="anthropic.claude-3-5-sonnet-20241022-v2:0",  # Specifies the Claude 3.5 Sonnet model
+    model="us.anthropic.claude-3-5-sonnet-20241022-v2:0",  # Specifies the Claude 3.5 Sonnet model
     system_prompt="""You are a dog breed expert specializing
     in helping new pet parents decide what breed meets their lifestyles. Your expertise
     covers dog behavior, dog training, basic veterinary care, and dog breed standards.
