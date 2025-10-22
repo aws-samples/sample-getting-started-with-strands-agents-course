@@ -18,6 +18,9 @@ from mcp.server import FastMCP
 from strands import Agent
 from strands.tools.mcp.mcp_client import MCPClient
 from strands.models.anthropic import AnthropicModel
+from dotenv import load_dotenv               # For loading environment variables from .env file
+
+load_dotenv()
 
 model = AnthropicModel(
     client_args={
