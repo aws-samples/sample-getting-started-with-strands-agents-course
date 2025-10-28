@@ -1,6 +1,6 @@
 # Getting Started with Strands Agents - Complete Learning Path
 
-🎯 **Learning Journey**: Course 1 (Fundamentals) → Course 2 (Advanced MCP & Production)
+🎯 **Learning Journey**: Course 1 (Fundamentals) → Course 2 (Advanced MCP & Production) → Course 3 (Multi Agent Systems) → Course 4 (Production Deployment)
 
 A comprehensive hands-on learning path for AI agent development using the [Strands Agents framework](https://strandsagents.com/). Build intelligent, multi-agent systems from basic concepts to production-ready implementations with advanced capabilities. All of these courses have free video courses to follow along available at Analytics Vidhya. 
 
@@ -8,7 +8,7 @@ A comprehensive hands-on learning path for AI agent development using the [Stran
 
 ## 📚 Learning Path Overview
 
-This repository contains two progressive courses that take you from fundamentals to advanced production-ready implementations:
+This repository contains three progressive courses that take you from fundamentals to advanced production-ready implementations:
 
 ### **Course 1: Getting Started with Strands Agents**
 Foundation course covering basic agent creation, model providers, AWS integration, MCP basics, agent-to-agent communication, and observability fundamentals.
@@ -20,7 +20,15 @@ Advanced course focusing on production-ready implementations, advanced tool inte
 
 Video Series available [here](https://www.analyticsvidhya.com/courses/advanced-strands-agents-mcp/) for free enrollment.
 
-**Total Learning Time**: ~3-4 hours across both courses
+### **Course 3: Building Multi Agent Systems with Strands Agents**
+Develop intelligent multi-agent systems that coordinate, communicate, and solve complex problems using swarm and graph-based patterns with Strands.
+
+Video Series available [here](https://www.analyticsvidhya.com/courses/building-multi-agent-systems-with-strands-agents/) for free enrollment.
+
+### **Course 4: Production Deployment with Amazon Bedrock AgentCore**
+Production deployment course covering best practices for running agents in production environments using Amazon Bedrock AgentCore Runtime for serverless scaling and management.
+
+**Total Learning Time**: ~4-5 hours across all courses
 
 ---
 
@@ -191,6 +199,47 @@ Build agents with long-term memory capabilities across conversations:
 
 ---
 
+## 🚀 Course 4: Production Deployment with Amazon Bedrock AgentCore
+
+**Location**: `course-4/` directory
+
+Learn to deploy production-ready AI agents using Amazon Bedrock AgentCore Runtime. This course focuses on serverless deployment, scaling, and management of agents in production environments.
+
+### What You'll Learn
+- **Production Best Practices** - Understand differences between development and production agent deployment
+- **Amazon Bedrock AgentCore** - Comprehensive overview of AgentCore services and components
+- **Serverless Deployment** - Deploy agents with auto-scaling and session management
+- **Production Operations** - Monitor, troubleshoot, and maintain production agent systems
+
+### Course 4 Structure
+
+| 🧪 Lab | 📝 What You'll Learn | ⏱️ Time | 📊 Level |
+|--------|---------------------|---------|----------|
+| [Lab 1: Operating Agents in Production](course-4/) | Production best practices, development vs production differences | 9 min | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
+| [Lab 2: Introduction to Amazon Bedrock AgentCore](course-4/) | Amazon Bedrock AgentCore fundamentals, service components overview | 12 min | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
+| [Lab 3: Building a Calculator Agent](course-4/) | Hands-on deployment with AgentCore Runtime | 20 min | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
+
+### Course 4 Lab Details
+
+#### Lab 1: Operating Agents in Production (9:00)
+Understand the best practices for running agents in a production setting and how that differs from local development.
+
+#### Lab 2: Introduction to Amazon Bedrock AgentCore (12:00)
+Understand the fundamentals of Amazon Bedrock AgentCore and its components.
+
+#### Lab 3: Building a Calculator Agent (20:00)
+**Files**: `my_agent.py`, `invoke_agent.py`, `requirements.txt`
+
+Hands-on deployment of a production-ready calculator agent:
+- Agent creation with Strands Agents framework
+- AgentCore Runtime deployment and configuration
+- Testing deployed agents with session management
+- Production invocation patterns and best practices
+
+> **Note**: This lab requires an AWS account with appropriate permissions and model access enabled in Amazon Bedrock console.
+
+---
+
 ## 🛠️ Technologies & Services
 
 | 🔧 Technology | 🎯 Purpose | 📖 Documentation |
@@ -230,6 +279,14 @@ Build agents with long-term memory capabilities across conversations:
   - OpenAI (optional alternative)
   - Mem0 (for Lab 6 memory persistence)
 
+### Course 4 Requirements
+- **Completion of Course 1 & 2** or equivalent knowledge
+- **AWS Account** with appropriate permissions
+- **Python 3.10+**
+- **AWS CLI configured** with `aws configure`
+- **AWS Permissions**: [BedrockAgentCoreFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/BedrockAgentCoreFullAccess.html) policy
+- **Model Access**: Anthropic Claude 3.5 Haiku enabled in Amazon Bedrock console
+
 ---
 
 ## 🚀 Getting Started
@@ -262,6 +319,10 @@ pip install -r requirements.txt
 
 # For Course 2
 cd course-2
+pip install -r requirements.txt
+
+# For Course 4
+cd course-4
 pip install -r requirements.txt
 ```
 
@@ -389,6 +450,22 @@ cd course-2/Lab6
 python memory_example.py
 ```
 
+### Course 4 Examples
+
+**Lab 3: Production Deployment**
+```bash
+cd course-4
+python my_agent.py
+```
+
+**Deploy to AgentCore Runtime**
+```bash
+cd course-4
+agentcore configure -e my_agent.py
+agentcore launch
+agentcore invoke '{"prompt": "What is 50 plus 30?"}'
+```
+
 ---
 
 ## 🐛 Troubleshooting
@@ -413,6 +490,16 @@ python memory_example.py
 | **MCP Servers** | Allow time for MCP servers to initialize before agent connections in Lab 4 |
 | **Memory Backends** | Mem0 API key only required for Lab 6 memory persistence |
 
+### Course 4 Issues
+
+| Issue | Solution |
+|-------|----------|
+| **AWS Permissions** | Ensure BedrockAgentCoreFullAccess policy is attached to your user/role |
+| **Model Access** | Enable Anthropic Claude 3.5 Haiku in Amazon Bedrock console |
+| **AgentCore CLI** | Run `pip install bedrock-agentcore-starter-toolkit` if `agentcore` command not found |
+| **Deployment Failures** | Check CloudWatch logs at `/aws/bedrock-agentcore/runtimes/{agent-id}-DEFAULT` |
+| **Session Issues** | Ensure session IDs are 33+ characters for proper session management |
+
 ---
 
 ## 📚 Additional Resources
@@ -422,6 +509,11 @@ python memory_example.py
 - [Model Context Protocol Specification](https://modelcontextprotocol.io/)
 - [Anthropic Claude API](https://docs.anthropic.com/)
 - [Amazon Bedrock User Guide](https://docs.aws.amazon.com/bedrock/)
+- [What is Amazon Bedrock AgentCore?](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html)
+- [AgentCore Runtime How It Works](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-how-it-works.html)
+- [AgentCore Memory Guide](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory.html)
+- [AgentCore Gateway Documentation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway.html)
+- [Programmatic Agent Invocation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-toolkit.html#invoke-programmatically)
 
 ### Related Courses & Tutorials
 - [Building with Amazon Bedrock Workshop](https://catalog.workshops.aws/building-with-amazon-bedrock/en-US)
