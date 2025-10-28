@@ -217,7 +217,7 @@ Learn to deploy production-ready AI agents using Amazon Bedrock AgentCore Runtim
 |--------|---------------------|---------|----------|
 | [Lab 1: Operating Agents in Production](course-4/) | Production best practices, development vs production differences | 9 min | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
 | [Lab 2: Introduction to Amazon Bedrock AgentCore](course-4/) | Amazon Bedrock AgentCore fundamentals, service components overview | 12 min | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
-| [Lab 3: Building a Calculator Agent](course-4/) | Hands-on deployment with AgentCore Runtime | 20 min | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
+| [Lab 3: Building agents with Amazon Bedrock AgentCore](course-4/) | Hands-on deployment with AgentCore Runtime | 20 min | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
 
 ### Course 4 Lab Details
 
