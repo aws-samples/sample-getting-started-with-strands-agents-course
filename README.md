@@ -28,7 +28,7 @@ Video Series available [here](https://www.analyticsvidhya.com/courses/building-m
 ### **Course 4: Production Deployment with Amazon Bedrock AgentCore**
 Production deployment course covering best practices for running agents in production environments using Amazon Bedrock AgentCore Runtime for serverless scaling and management.
 
-**Total Learning Time**: ~4-5 hours across all courses
+**Total Learning Time**: ~5-6 hours across all courses
 
 ---
 
