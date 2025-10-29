@@ -20,7 +20,7 @@ Advanced course focusing on production-ready implementations, advanced tool inte
 
 Video Series available [here](https://www.analyticsvidhya.com/courses/advanced-strands-agents-mcp/) for free enrollment.
 
-### **Course 3: Building Multi-Agent Systems with Strands Agents**
+### **Course 3: Building Multi-Agent Systems**
 Develop intelligent multi-agent systems that coordinate, communicate, and solve complex problems using swarm, graph-based and agents as tools patterns with Strands Agents.
 
 Video Series available [here](https://www.analyticsvidhya.com/courses/building-multi-agent-systems-with-strands-agents/) for free enrollment.
@@ -199,7 +199,7 @@ Build agents with long-term memory capabilities across conversations:
 
 ---
 
-## 🤖 Course 3: Building Multi-Agent Systems with Strands Agents
+## 🤖 Course 3: Building Multi-Agent Systems
 
 **Location**: [Strands Samples](https://github.com/strands-agents/samples/tree/main/01-tutorials/02-multi-agent-systems) 
 
