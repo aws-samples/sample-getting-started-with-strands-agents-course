@@ -199,7 +199,7 @@ Build agents with long-term memory capabilities across conversations:
 
 ---
 
-### **Course 3: Building Multi-Agent Systems with Strands Agents**
+## 🤖 Course 3: Building Multi-Agent Systems with Strands Agents
 
 **Location**: [Strands Samples](https://github.com/strands-agents/samples/tree/main/01-tutorials/02-multi-agent-systems) 
 
@@ -209,9 +209,9 @@ Develop intelligent multi-agent systems that coordinate, communicate, and solve 
 
 | 🧪 Lab | 📝 What You'll Learn | ⏱️ Time | 📊 Level |
 |--------|---------------------|---------|----------|
-| [Lab 2: Multi-Agent Systems with Swarm Intelligence](https://github.com/strands-agents/samples/blob/main/01-tutorials/02-multi-agent-systems/02-swarm-agent/swarm.ipynb) | Deep dive for Swarm multi-agent pattern | 30 min | ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow) |
-| [Lab 3: Multi-Agent Systems with Agent Graph](https://github.com/strands-agents/samples/blob/main/01-tutorials/02-multi-agent-systems/03-graph-agent/graph.ipynb) | Deep dive for Graph multi-agent pattern | 25 min | ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow) |
-| [Lab 4: Multi-Agent System with Agents as a Tools](https://github.com/strands-agents/samples/blob/main/01-tutorials/02-multi-agent-systems/01-agent-as-tool/agent-as-tools.ipynb) | Deep dive for Agents as Tools multi-agent pattern | 20 min | ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow) |
+| [Lab 1: Multi-Agent Systems with Swarm Intelligence](https://github.com/strands-agents/samples/blob/main/01-tutorials/02-multi-agent-systems/02-swarm-agent/swarm.ipynb) | Use a Jupyter notebook to deep dive into the Swarm multi-agent pattern | 30 min | ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow) |
+| [Lab 2: Multi-Agent Systems with Agent Graph](https://github.com/strands-agents/samples/blob/main/01-tutorials/02-multi-agent-systems/03-graph-agent/graph.ipynb) | Use a Jupyter notebook to deep dive into the Graph multi-agent pattern | 25 min | ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow) |
+| [Lab 3: Multi-Agent System with Agents as a Tools](https://github.com/strands-agents/samples/blob/main/01-tutorials/02-multi-agent-systems/01-agent-as-tool/agent-as-tools.ipynb) | Use a Jupyter notebook to deep dive into the Agents as Tools multi-agent pattern | 20 min | ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow) |
 
 ---
 
@@ -232,7 +232,7 @@ Learn to deploy production-ready AI agents using Amazon Bedrock AgentCore Runtim
 | 🧪 Lab | 📝 What You'll Learn | ⏱️ Time | 📊 Level |
 |--------|---------------------|---------|----------|
 | [Lab 1: Operating Agents in Production](course-4/) | Production best practices, development vs production differences | 9 min | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
-| [Lab 2: Introduction to Amazon Bedrock AgentCore](course-4/) | Amazon Bedrock AgentCore fundamentals, service components overview | 12 min | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
+| [Lab 2: Introduction to Amazon Bedrock AgentCore](course-4/) | Amazon Bedrock AgentCore fundamentals, service component overview | 12 min | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
 | [Lab 3: Building agents with Amazon Bedrock AgentCore](course-4/) | Hands-on deployment with AgentCore Runtime | 20 min | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
 
 ### Course 4 Lab Details
