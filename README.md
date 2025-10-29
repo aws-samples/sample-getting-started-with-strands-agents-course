@@ -1,6 +1,6 @@
 # Getting Started with Strands Agents - Complete Learning Path
 
-🎯 **Learning Journey**: Course 1 (Fundamentals) → Course 2 (Advanced MCP & Production) → Course 3 (Multi Agent Systems) → Course 4 (Production Deployment)
+🎯 **Learning Journey**: Course 1 (Fundamentals) → Course 2 (Advanced MCP, Hooks, Session Management) → Course 3 (Multi-Agent Systems) → Course 4 (Production Deployment)
 
 A comprehensive hands-on learning path for AI agent development using the [Strands Agents framework](https://strandsagents.com/). Build intelligent, multi-agent systems from basic concepts to production-ready implementations with advanced capabilities. All of these courses have free video courses to follow along available at Analytics Vidhya. 
 
@@ -8,7 +8,7 @@ A comprehensive hands-on learning path for AI agent development using the [Stran
 
 ## 📚 Learning Path Overview
 
-This repository contains three progressive courses that take you from fundamentals to advanced production-ready implementations:
+This repository contains four progressive courses that take you from fundamentals to advanced production-ready implementations:
 
 ### **Course 1: Getting Started with Strands Agents**
 Foundation course covering basic agent creation, model providers, AWS integration, MCP basics, agent-to-agent communication, and observability fundamentals.
@@ -20,8 +20,8 @@ Advanced course focusing on production-ready implementations, advanced tool inte
 
 Video Series available [here](https://www.analyticsvidhya.com/courses/advanced-strands-agents-mcp/) for free enrollment.
 
-### **Course 3: Building Multi Agent Systems with Strands Agents**
-Develop intelligent multi-agent systems that coordinate, communicate, and solve complex problems using swarm and graph-based patterns with Strands.
+### **Course 3: Building Multi-Agent Systems with Strands Agents**
+Develop intelligent multi-agent systems that coordinate, communicate, and solve complex problems using swarm, graph-based and agents as tools patterns with Strands Agents.
 
 Video Series available [here](https://www.analyticsvidhya.com/courses/building-multi-agent-systems-with-strands-agents/) for free enrollment.
 
@@ -199,6 +199,22 @@ Build agents with long-term memory capabilities across conversations:
 
 ---
 
+### **Course 3: Building Multi-Agent Systems with Strands Agents**
+
+**Location**: [Strands Samples](https://github.com/strands-agents/samples/tree/main/01-tutorials/02-multi-agent-systems) 
+
+Develop intelligent multi-agent systems that coordinate, communicate, and solve complex problems using swarm, graph-based and agents as tools patterns with Strands Agents.
+
+### Course 3 Structure
+
+| 🧪 Lab | 📝 What You'll Learn | ⏱️ Time | 📊 Level |
+|--------|---------------------|---------|----------|
+| [Lab 2: Multi-Agent Systems with Swarm Intelligence](https://github.com/strands-agents/samples/blob/main/01-tutorials/02-multi-agent-systems/02-swarm-agent/swarm.ipynb) | Deep dive for Swarm multi-agent pattern | 30 min | ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow) |
+| [Lab 3: Multi-Agent Systems with Agent Graph](https://github.com/strands-agents/samples/blob/main/01-tutorials/02-multi-agent-systems/03-graph-agent/graph.ipynb) | Deep dive for Graph multi-agent pattern | 25 min | ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow) |
+| [Lab 4: Multi-Agent System with Agents as a Tools](https://github.com/strands-agents/samples/blob/main/01-tutorials/02-multi-agent-systems/01-agent-as-tool/agent-as-tools.ipynb) | Deep dive for Agents as Tools multi-agent pattern | 20 min | ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow) |
+
+---
+
 ## 🚀 Course 4: Production Deployment with Amazon Bedrock AgentCore
 
 **Location**: `course-4/` directory
@@ -261,7 +277,7 @@ Hands-on deployment of a production-ready calculator agent:
 ## 📋 Prerequisites
 
 ### Course 1 Requirements
-- **Python 3.8+**
+- **Python 3.10+**
 - **Virtual environment** (recommended)
 - **API keys for at least one of:**
   - Anthropic Claude 
@@ -271,7 +287,7 @@ Hands-on deployment of a production-ready calculator agent:
 
 ### Course 2 Requirements
 - **Completion of Course 1** (Labs 1-6) or equivalent knowledge
-- **Python 3.8+**
+- **Python 3.10+**
 - **Virtual environment** (recommended)
 - **Anthropic Claude API key** (primary requirement) - Get from [Anthropic Console](https://console.anthropic.com/)
 - **Additional API keys for specific labs:**
@@ -279,8 +295,15 @@ Hands-on deployment of a production-ready calculator agent:
   - OpenAI (optional alternative)
   - Mem0 (for Lab 6 memory persistence)
 
+### Course 3 Requirements
+- **Completion of Course 1-2** (Labs 1-6) or equivalent knowledge
+- **Python 3.10+**
+- **Virtual environment** (recommended)
+- **AWS account with Anthropic Claude 3.7 enabled on Amazon Bedrock**
+- **AWS IAM role with permissions to use Amazon Bedrock**
+
 ### Course 4 Requirements
-- **Completion of Course 1 & 2** or equivalent knowledge
+- **Completion of Course 1-3** or equivalent knowledge
 - **AWS Account** with appropriate permissions
 - **Python 3.10+**
 - **AWS CLI configured** with `aws configure`
@@ -360,25 +383,6 @@ AWS_SESSION_TOKEN=your_aws_token      # For Lab 4 MCP integration
 OPENAI_API_KEY=your_openai_key        # For Lab 2 model alternatives
 MEM0_API_KEY=your_mem0_key            # For Lab 6 memory persistence
 ```
-
----
-
-## 🎓 Recommended Learning Path
-
-### Start with Course 1
-1. **Lab 1** - Get familiar with basic agent creation
-2. **Labs 2-3** - Learn model providers and AWS integration
-3. **Lab 4** - Understand MCP and tool integration
-4. **Lab 5** - Create multi-agent systems
-5. **Lab 6** - Implement observability and evaluation
-
-### Progress to Course 2
-1. **Lab 1** - Master agent fundamentals and lifecycle (no API key required)
-2. **Lab 2** - Configure multiple providers with metrics analysis
-3. **Lab 3** - Implement hooks for advanced processing
-4. **Lab 4** - Build custom tools and MCP integrations
-5. **Lab 5** - Manage sophisticated conversation strategies
-6. **Lab 6** - Create agents with persistent memory systems
 
 ---
 
@@ -489,6 +493,13 @@ agentcore invoke '{"prompt": "What is 50 plus 30?"}'
 | **AWS Credentials** | Only needed for Lab 4 MCP integration - configure AWS CLI or environment |
 | **MCP Servers** | Allow time for MCP servers to initialize before agent connections in Lab 4 |
 | **Memory Backends** | Mem0 API key only required for Lab 6 memory persistence |
+
+### Course 3 Issues
+
+| Issue | Solution |
+|-------|----------|
+| **AWS Permissions** | Ensure BedrockAgentCoreFullAccess policy is attached to your user/role |
+| **Model Access** | Enable Anthropic Claude 3.7 Sonnet in Amazon Bedrock console |
 
 ### Course 4 Issues
 
