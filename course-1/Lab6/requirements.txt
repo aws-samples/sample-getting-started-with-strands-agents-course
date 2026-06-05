@@ -13,4 +13,4 @@ ragas
 docx2txt
 langchain_aws
 langchain_chroma
-pyarrow==15.0.2
+pyarrow==23.0.1
